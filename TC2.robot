@@ -7,8 +7,6 @@ ${url}  https://www.facebook.com/
 ${browser}  chrome
 
 *** Test Cases ***
-| test 1 
-| | log | this is test one
 InputTestBox
     open browser    ${url}  ${browser}
     maximize browser window
@@ -16,7 +14,6 @@ InputTestBox
     CreateNewAcc
 
 *** Keywords ***
-| change xxx to your email and password
 CreateNewAcc
     input text    id:email  bleble@gmail.com
     ${"nameacc"}    set variable    id:pass
